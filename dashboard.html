@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Dashboard - PetAdopt</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #EDE9F6;
+      color: #4A3F5C;
+    }
+
+
+    .navbar {
+      background-color: #BBA6D8;
+      padding: 6px 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-left {
+      display: flex;
+      align-items: center;
+    }
+
+    .menu-icon {
+      width: 24px;
+      margin-right: 8px;
+    }
+
+    .brand {
+      font-size: 1.2em;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    .user-icon {
+      width: 28px;
+      border-radius: 50%;
+      filter: hue-rotate(240deg) brightness(1.1) contrast(1.2);
+    }
+
+    /* Header */
+    header {
+      background-color: #BBA6D8;
+      text-align: center;
+      padding: 15px 10px;
+      color: #fff;
+    }
+
+    header h1 {
+      font-size: 2em;
+      margin-bottom: 8px;
+    }
+
+    header img {
+      width: 60px;
+      border-radius: 50%;
+      margin-top: 6px;
+    }
+
+    /* Container */
+    .container {
+      max-width: 950px;
+      margin: 40px auto;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(132, 102, 176, 0.2);
+    }
+
+    .welcome {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .welcome h2 {
+      font-size: 1.7em;
+    }
+
+    /* Adoption Status Table */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 12px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #E2D4F3;
+      color: #4A3F5C;
+    }
+
+    tr:hover {
+      background-color: #f7f2fc;
+    }
+
+    .status-approved {
+      color: green;
+      font-weight: bold;
+    }
+
+    .status-pending {
+      color: orange;
+      font-weight: bold;
+    }
+
+    .status-rejected {
+      color: red;
+      font-weight: bold;
+    }
+
+    /* Progress Tracker */
+    .progress {
+      margin: 40px 0 20px;
+    }
+
+    .progress h3 {
+      margin-bottom: 15px;
+    }
+
+    .step {
+      background: #F9F6FC;
+      border-left: 5px solid #BBA6D8;
+      padding: 15px 20px;
+      margin-bottom: 10px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(187, 166, 216, 0.1);
+    }
+
+    /* Tips Box */
+    .tips {
+      background-color: #f3e9fc;
+      padding: 20px;
+      border-radius: 12px;
+      margin-top: 30px;
+      box-shadow: 0 4px 12px rgba(200, 170, 240, 0.15);
+    }
+
+    .tips h3 {
+      margin-bottom: 10px;
+    }
+
+    .tips ul {
+      padding-left: 20px;
+    }
+
+    .tips ul li {
+      margin-bottom: 8px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <img src="https://cdn-icons-png.flaticon.com/512/1828/1828859.png" alt="Menu" class="menu-icon">
+      <span class="brand">Pet Paraside</span>
+    </div>
+    <div class="nav-right">
+      <img src="https://cdn-icons-png.flaticon.com/512/1144/1144760.png" alt="User Icon" class="user-icon">
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <h1>Welcome Back!</h1>
+    <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Pet Logo">
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    
+    <!-- Welcome Section -->
+    <div class="welcome">
+      <h2>Hi Adopter 👋</h2>
+      <p>You have submitted <strong>3 adoption requests</strong>. Check their status below.</p>
+    </div>
+
+    <!-- Adoption Status Table -->
+    <h3>My Adoption Applications</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Pet Name</th>
+          <th>Type</th>
+          <th>Adoption Date</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Bella</td>
+          <td>Dog</td>
+          <td>2025-06-20</td>
+          <td class="status-approved">Approved</td>
+        </tr>
+        <tr>
+          <td>Milo</td>
+          <td>Cat</td>
+          <td>2025-06-30</td>
+          <td class="status-pending">Pending</td>
+        </tr>
+        <tr>
+          <td>Snowy</td>
+          <td>Rabbit</td>
+          <td>2025-05-18</td>
+          <td class="status-rejected">Rejected</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Adoption Progress -->
+    <div class="progress">
+      <h3>Adoption Process Steps</h3>
+      <div class="step"><strong>Step 1:</strong> Submit Application ✅</div>
+      <div class="step"><strong>Step 2:</strong> Home Visit Scheduled 📅</div>
+      <div class="step"><strong>Step 3:</strong> Final Approval 🕒</div>
+      <div class="step"><strong>Step 4:</strong> Welcome Your Pet! 🐶</div>
+    </div>
+
+    <!-- Tips Section -->
+    <div class="tips">
+      <h3>Helpful Tips 💡</h3>
+      <ul>
+        <li>Keep your phone and email active for updates</li>
+        <li>Prepare your home for your new pet in advance</li>
+        <li>Make a visit to a vet clinic for a check-up</li>
+        <li>Always provide clean water and nutritious food</li>
+      </ul>
+    </div>
+
+  </div>
+
+</body>
+</html>

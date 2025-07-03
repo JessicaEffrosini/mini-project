@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Adopt a Pet</title>
+  <style>
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #EDE9F6;
+      color: #4A3F5C;
+    }
+
+   
+    .navbar {
+      background-color:#BBA6D8; 
+      padding: 6px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-left {
+      display: flex;
+      align-items: center;
+    }
+
+    .menu-icon {
+      width: 28px;
+      margin-right: 10px;
+    }
+
+    .brand {
+      font-size: 1.3em;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    .user-icon {
+      width: 32px;
+      border-radius: 50%;
+      filter: hue-rotate(240deg) brightness(1.1) contrast(1.2); 
+    }
+
+    header {
+      background-color :#BBA6D8;
+      text-align: center;
+      padding: 15px 10px;
+      color: #fff;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    header img {
+      width: 70px;
+      border-radius: 50%;
+      margin-top: 10px;
+    }
+
+    /* Container */
+    .container {
+      max-width: 700px;
+      margin: 40px auto;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(132, 102, 176, 0.2);
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 15px;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 5px;
+      border: 1px solid #C4BFD6;
+      border-radius: 10px;
+      background-color: #F9F7FC;
+    }
+
+    input[type="submit"] {
+      background-color: #FCA552;
+      color: white;
+      font-weight: bold;
+      border: none;
+      margin-top: 25px;
+      cursor: pointer;
+      font-size: 1.1em;
+      transition: background 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #e68933;
+    }
+
+
+    .pet-banner {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .pet-banner img {
+      width: 100%;
+      max-height: 220px;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+
+  
+    .contact {
+      background-color: #e8d6f2;
+      padding: 25px;
+      border-radius: 15px;
+      margin-top: 40px;
+      font-size: 0.95em;
+    }
+
+    .contact a {
+      color: #4A3F5C;
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <img src="https://cdn-icons-png.flaticon.com/512/1828/1828859.png" alt="Menu" class="menu-icon">
+      <span class="brand">Pet Paraside</span>
+    </div>
+    <div class="nav-right">
+      <img src="https://cdn-icons-png.flaticon.com/512/1144/1144760.png" alt="User Icon" class="user-icon">
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <h1>Adopt a Loving Friend</h1>
+    <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Pet Logo">
+  </header>
+
+  <!-- Main Container -->
+  <div class="container">
+
+    <!-- Pet Image Banner -->
+    <div class="pet-banner">
+      <img src="banner.png" alt="Happy Puppy Banner" style="width:100%; height:auto; border-radius:12px; object-fit:cover;">
+    </div>
+
+    <!-- Form -->
+    <form action="#" method="GET">
+
+      <label for="fullname">Full Name*</label>
+      <input type="text" id="fullname" name="fullname" required>
+
+      <label for="email">Email Address*</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone Number*</label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="e.g. 9876543210" required>
+
+      <label for="pet">Which pet are you interested in?*</label>
+      <select id="pet" name="pet" required>
+        <option value="">-- Select a Pet --</option>
+        <option value="bella_dog">Bella (Dog)</option>
+        <option value="milo_cat">Milo (Cat)</option>
+        <option value="snowy_rabbit">Snowy (Rabbit)</option>
+      </select>
+
+      <label for="aadhar card">Aadhar Card</label>
+       <input type="file" id="acard" pattern="[0-9]{10}" placeholder="Add file" required>
+
+
+      <label for="reason">Why do you want to adopt?</label>
+      <textarea id="reason" name="reason" rows="4" placeholder="Tell us about your motivation and home environment..."></textarea>
+
+      <label>
+        <input type="checkbox" required>
+        I agree to provide a loving and responsible home.
+      </label>
+
+      <input type="submit" value="Submit Application">
+    </form>
+
+    <!-- Contact Info -->
+    <div class="contact">
+      <h2>Contact Us</h2>
+      <p><strong>Email:</strong> <a href="mailto:adopt@petcare.org">adopt@petcare.org</a></p>
+      <p><strong>Phone:</strong> +91 98765 43210</p>
+      <p><strong>Address:</strong> 123 Lavender Lane, Chennai, India</p>
+    </div>
+
+  </div>
+
+</body>
+</html>
+
