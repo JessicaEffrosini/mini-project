@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pet Detail Page</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <style>
+    body {
+      background: url('bg.pet.jpg') no-repeat center center/cover;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      min-height: 100vh;
+      padding: 20px;
+    }
+    .pet-card {
+      max-width: 600px;
+      margin: 50px auto;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+ .pet-card {
+  background-color: #BBA6D8; /* white or any light color */
+  max-width: 600px;
+  margin: 50px auto;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+    .pet-card:hover {
+      transform: scale(1.02);
+    }
+
+    .pet-image {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+
+    .pet-info {
+      padding: 20px;
+    }
+
+    .pet-info h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .pet-info p {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card pet-card">
+    <img
+      src="zoe.jpg"
+      alt="Pet Image"
+      class="pet-image"
+    />
+    <div class="pet-info">
+      <h2>Name: Zoe</h2>
+      <p><strong>Age:</strong> 1 years</p>
+      <p><strong>Location:</strong> Chennai, India</p>
+      <p><strong>Description:</strong> Zoe is a loyal and spirited companion with a heart full of love and a tail that never stops wagging.</p>
+    </div>
+  </div>
+ <div class="card pet-card">
+    <img
+      src="keno.avif"
+      alt="Pet Image"
+      class="pet-image"
+    />
+    <div class="pet-info">
+      <h2>Name: Keno</h2>
+      <p><strong>Age:</strong> 1 years</p>
+      <p><strong>Location:</strong> Chennai, India</p>
+      <p><strong>Description:</strong> Keno is a mysterious and graceful feline with a calm charm and clever mind..</p>
+    </div>
+  </div>
+ <div class="card pet-card">
+    <img
+      src="loco.avif"
+      alt="Pet Image"
+      class="pet-image"
+    /> 
+    <div class="pet-info">
+      <h2>Name: Loco</h2>
+      <p><strong>Age:</strong>  6 months</p>
+      <p><strong>Location:</strong> Chennai, India</p>
+      <p><strong>Description:</strong> Loco is a bundle of hops and happiness, full of playful mischief and irresistible charm .</p>
+    </div>
+  </div>
+    <div class="card pet-card">
+    <img
+      src="pearl.jpg"
+      alt="Pet Image"
+      class="pet-image"
+    /> 
+    <div class="pet-info">
+      <h2>Name: Pearl</h2>
+      <p><strong>Age:</strong> 3 months</p>
+      <p><strong>Location:</strong> Chennai, India</p>
+      <p><strong>Description:</strong> Pearl is a shimmering beauty, gliding gracefully through the water like a living jewel.</p>
+    </div>
+  </div>
+    <div class="card pet-card">
+    <img
+      src="jo.webp"
+      alt="Pet Image"
+      class="pet-image"
+    /> 
+    <div class="pet-info">
+      <h2>Name: Jo</h2>
+      <p><strong>Age:</strong> 6 months</p>
+      <p><strong>Location:</strong> Chennai, India</p>
+      <p><strong>Description:</strong> Jo is a vibrant burst of color and personality, with feathers as bright as his spirit.</p>
+    </div>
+  </div>
+</body>
+</html>
